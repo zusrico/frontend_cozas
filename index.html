@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+    <title>apple</title>
+</head>
+<body>
+    <header style="text-align: center; margin-top: 1rem;">
+        <h1>Apple</h1>
+    </header>
+    <main>
+        <section>
+            <article class="primer_articulo">
+                <div class="logos">
+                    <img class="uno" id="textin" src="./images/Apple_first_logo (1).png" alt="primer logo de apple">
+                    <img class="dos" id="textin2" src="./images/Apple_Computer_Logo_rainbow.svg.png" alt="segundo logo de apple">
+                    <img class="tre" src="./images/Apple_logo_black.svg.png" alt="tercer logo de apple">
+                    <img class="cua" src="./images/Apple_logo_hollow.svg.png" alt="cuarto logo de apple">
+                    <img class="cin" src="./images/Apple_logo_grey.svg.png" alt="quinto logo de apple">
+                </div>
+                <div>
+                    <p class="eslogan">Think different.</p>
+                </div>
+                <div class="info">
+                    <p id="texto">This logo was designed by Ron Wayne, one of the co-founders of Apple along with Steve Jobs and Steve Wozniak.This logo was only used for the Apple I. A replacement was soon sought, as it was too detailed to be easily reproduced on computers and was thought "too intellectual" by Steve Jobs.</p>
+                    <p id="texto2">The new logo was designed by Ron Janoff, a graphic designer at the Regis McKenna advertising/pr agency. According to Janoff, the only brief for the design was "don't make it cute". Janoff presented several concepts including color and monochrome as well as metallic designs, both with and without the bite, all in the same basic shape. Janoff added the bite because the abstract shape risked being confused with other fruits, such as cherries.
+                    From these, Steve Jobs selected the now-iconic rainbow logo with a bite. The choice of a colorful logo partly reflected the fact that the Apple II could display color images, which was a rarity at the time. It was also felt to be more accessible than alternatives.</p>
+                </div>
+                <button type="button"><a style="background-color: black; color: white;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">Más información</a></button>
+            </article>
+            <article class="anuncio">
+                <div class="producto par primero">
+                    <p>IPHONE 14 PRO</p>
+                    <p style="font-size: 28px;">Pro. Muy Pro.</p>
+                    <p style="font-size: 17px; font-weight: 400;">Desde 54,86 €/mes o Desde 1.319 € sin renovación</p>
+                </div>
+                <div class="producto impar segundo">
+                    <p style="color: #6E6E73 ">CÓMODOS PLAZOS MENSUALES</p>
+                    <p style="font-size: 28px;">Paga en hasta 24 plazos mensuales al 0 % TAE. Durante un tiempo <br>limitado.</p>
+                </div>
+                <div class="producto par tercero">
+                    <p style="font-weight: 400;">MACBOOK PRO DE 14" y 16"</p>
+                    <p style="font-size: 28px;">Crea lo imposible.</p>
+                    <p style="font-size: 17px; font-weight: 400;">Desde 2.449 €</p>
+                </div>
+                <div class="producto impar cuarto">
+                    <p style="color: #6E6E73;">IPHONE 14</p>
+                    <p style="font-size: 28px;">El multitalento.</p>
+                    <p style="font-size: 17px; color: #1D1D1F; line-height: 1.23536;font-weight: 400;">Desde 42,04 €/mes o desde 1.009 € sin renovación.</p>
+                </div>
+                <div class="producto par quinto">
+                    <p style="font-weight: 400;">APPLE WATCH SERIES 8</p>
+                    <p style="font-size: 28px;">Progresa saludablemente.</p>
+                    <p style="font-size: 17px; font-weight: 400;">Desde 499 €</p>
+                </div>
+                <div class="producto impar sexto">
+                    <p style="font-weight: 400;">IPAD</p>
+                    <p style="font-size: 28px;">Ultramágico. <br>Megaquerible.<br>
+                    Superpintón.</p>
+                    <p style="font-size: 17px; font-weight: 400;">Desde 579 €</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2023 Apple Inc. Reservados todos los derechos.</p>
+    </footer>
+    <script>
+
+        var visible = false;
+        var visible2 = false;
+
+        var textin = document.getElementById("textin");
+        var textin2 = document.getElementById("textin2");
+
+         
+        var parrafo = document.getElementById("texto");
+        var parrafo2 = document.getElementById("texto2")
+
+        function imprimeMensajes(){
+
+            if(!visible){
+                parrafo.style.display = "block";
+            }else{
+                parrafo.style.display = "none";
+            }
+            visible = !visible;
+        }
+
+        function imprimeMensajes2(){
+
+            if(!visible2){
+                parrafo2.style.display = "block";
+            }else{
+                parrafo2.style.display = "none";
+            }
+            visible2 = !visible2;
+            visible = !visible;
+        }
+
+        textin.addEventListener("click", imprimeMensajes);
+        textin2.addEventListener("click", imprimeMensajes2);
+
+    </script>
+</body>
+</html>

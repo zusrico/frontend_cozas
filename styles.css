@@ -1,0 +1,236 @@
+* {
+    margin: 0.25rem;
+    font-family: 'Mulish', sons-serif;
+    background-color: #edefee;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}   
+
+.eslogan {
+    font-size: 2.25rem;
+    font-weight: 600;
+    animation-name: image-fading;
+    animation-duration: 12s;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #edefee;
+    width: 100%;
+}
+
+section > article {
+    height: 800px;
+    background-color: #edefee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+}
+
+ .logos img {
+    min-width: 7%;
+    max-width: 6%;
+}
+
+.logos img:hover {
+    
+    transform: translateY(-10px) scale(1.25);
+}
+
+footer{
+    display: flex;
+    bottom: 0;
+}
+
+.primer_articulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logos {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    position: calc();
+}
+
+.info #texto, #texto2{
+    display: none;
+}
+
+
+.anuncio {
+    height: 51rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.anuncio::-webkit-scrollbar{
+    width: 0;
+}
+
+.producto.par {
+    font-size: 12px;
+    margin-left: 25px;
+    margin: 10px;
+    display: inline-block;
+    height: 55%;
+    background-color: black;
+    border-radius: 18px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
+    padding: 25px 20px;
+    letter-spacing: -.01em;
+
+}
+
+.producto.impar{
+    font-size: 12px;
+    margin-left: 25px;
+    margin: 10px;
+    display: inline-block;
+    height: 55%;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
+    padding: 25px 20px;
+    letter-spacing: -.01em;
+}
+
+.primero {
+    background: 
+    url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-iphone-14-pro-202303_GEO_ES?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1677311461080)
+    no-repeat center;
+    background-position: bottom;
+}
+
+.segundo{
+    background: 
+    url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-emea-finance-202303?wid=400&amp;hei=500&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1677166208575)
+    no-repeat center;
+}
+
+.tercero{
+    background: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-macbook-pro-202301?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1671578693545) no-repeat center;
+}
+
+.cuarto{
+    background: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-iphone-14-202303_GEO_ES?wid=400&hei=500&fmt=jpeg&qlt=95&.v=1677558885821) no-repeat center;
+}
+
+.quinto{
+    background: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-watch-s8-202303_GEO_ES?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1677224522509) no-repeat center;
+}
+
+.sexto {
+    background: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-ipad-202210?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1667423432053);
+}
+
+
+.producto:hover{
+    transform: scale(1.03);
+    transition: 0.75s;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.producto.par > p {
+    color: white; 
+    background-color: black;
+    font-size: 12px; 
+    font-weight: 600; 
+    font-family: SF PRO Text, SF Pro Icons, AOS Icons, Helvetica, Neue, Helvetica, Arial, Helvetica, sans-serif; 
+    width: 370px;
+}
+
+.producto.impar > p {
+    color: black; 
+    background-color: white;
+    font-size: 12px; 
+    font-weight: 600; 
+    font-family: SF PRO Text, SF Pro Icons, AOS Icons, Helvetica, Neue, Helvetica, Arial, Helvetica, sans-serif; 
+    width: 370px;
+}
+
+@keyframes image-fading{
+    0% {opacity: 0; }
+    70% {opacity: 0;}
+    100% {opacity: 1; }
+}
+
+.uno{
+    animation-name: image-fading;
+    animation-duration: 1s;
+}
+
+.dos{
+    animation-name: image-fading;
+    animation-duration: 3s;
+}
+
+
+.tre{
+    animation-name: image-fading;
+    animation-duration: 5s;
+}
+
+
+.cua{
+    animation-name: image-fading;
+    animation-duration: 7s;
+}
+
+
+.cin{
+    animation-name: image-fading;
+    animation-duration: 9s;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+    font-size: 17px;
+    padding: 8px 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    border-radius: 980px;
+}
+
+button:hover{
+    font-size: 18px;
+    box-shadow: 1px 1px 5px gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+.uno:hover #texto{
+    display: block;
+}
